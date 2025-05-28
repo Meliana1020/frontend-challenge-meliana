@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { getArticleDetail } from "../domain/articleUsecase";
-import ArticleDetail from "../components/ArticleDetail";
+import ArticleDetail from "../components/article-detail/ArticleDetail";
 import { Spin } from "antd";
 import type { Article } from "../domain/article";
 

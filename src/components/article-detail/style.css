@@ -1,0 +1,61 @@
+.article-detail-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 16px;
+  }
+  
+  .article-detail-card {
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .article-detail-title {
+    margin-bottom: 16px !important;
+    font-size: 20px;
+    line-height: 1.4;
+  }
+  
+  .article-detail-image-container {
+    margin-bottom: 16px;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  
+  .article-detail-image {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+  }
+  
+  .article-detail-content {
+    font-size: 14px;
+    line-height: 1.7;
+    white-space: pre-line;
+    color: #444;
+  }
+  
+  .article-meta-container {
+    margin-bottom: 12px;
+    font-size: 13px;
+    color: #666;
+  }
+  
+  .article-detail-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+  }
+  
+  .ant-card-body {
+    padding: 16px !important;
+  }
+  
+  .article-meta-container span {
+    margin-right: 12px;
+  }
+  
+  .article-detail-actions .ant-btn {
+    padding: 6px 16px;
+    font-size: 13px;
+  }

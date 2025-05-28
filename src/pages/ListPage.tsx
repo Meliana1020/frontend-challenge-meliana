@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { getArticles } from "../domain/articleUsecase";
-import ArticleList from "../components/ArticleList";
+import ArticleList from "../components/articlelist/ArticleList";
 import { Spin } from "antd";
 import type { Article } from "../domain/article";
 
@@ -9,7 +9,7 @@ export default function ListPage() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    getArticles().then(arts => {
+    getArticles().then((arts) => {
       setArticles(arts);
       setLoading(false);
     });

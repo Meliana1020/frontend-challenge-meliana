@@ -1,5 +1,5 @@
-jest.mock('antd', () => {
-  const actualAntd = jest.requireActual('antd');
+jest.mock("antd", () => {
+  const actualAntd = jest.requireActual("antd");
   const List = ({ dataSource, renderItem }: any) => (
     <div data-testid="antd-list">
       {dataSource && renderItem
@@ -9,7 +9,9 @@ jest.mock('antd', () => {
         : null}
     </div>
   );
-  List.Item = ({ children }: any) => <div data-testid="antd-list-item">{children}</div>;
+  List.Item = ({ children }: any) => (
+    <div data-testid="antd-list-item">{children}</div>
+  );
   const Card = ({ children, title, cover }: any) => (
     <div data-testid="antd-card">
       {cover}
@@ -25,11 +27,11 @@ jest.mock('antd', () => {
 });
 
 import { render, screen } from "@testing-library/react";
-import ArticleList from "../components/ArticleList";
+import ArticleList from "../components/articlelist/ArticleList";
 import { MemoryRouter } from "react-router-dom";
-import '@testing-library/jest-dom';
+import "@testing-library/jest-dom";
 
-test('renders articles', () => {
+test("renders articles", () => {
   const articles = [
     {
       title: "A",
@@ -38,8 +40,8 @@ test('renders articles', () => {
       url: "https://example.com",
       content: "content",
       publishedAt: "2025-05-27",
-      author: "Author"
-    }
+      author: "Author",
+    },
   ];
 
   render(

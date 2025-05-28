@@ -1,5 +1,6 @@
 import { Card } from "antd";
-import type { Article } from "../domain/article";
+import type { Article } from "../../domain/article";
+import "./style.css";
 
 interface Props {
   article: Article;
